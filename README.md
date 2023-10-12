@@ -57,7 +57,7 @@ Test your server by visiting this route in the browser:
 
 
 ### Live Link
-* The live link for the project is 
+* The live link for the project is https://ohthebrave.github.io/weather-app/
 
 ## Technology and Tools Used
 
