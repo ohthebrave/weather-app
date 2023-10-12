@@ -107,10 +107,6 @@ const myChart = new Chart(ctx, {
 
 });
 
-
-//   new Chart(ctx, {
-
-//   });
 }
 
 // fetch data of the city on the search bar
