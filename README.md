@@ -33,10 +33,6 @@ https://getbootstrap.com/docs/5.3/getting-started/introduction/
 ## Behaviour of the website
 ### View
 + The website is visually appealing
-+ Clicking the menu items renders menu item details on the page
-+ The order button processes the order
-+ Clicking on the reviews deletes them
-+ Submitting a review appends it on the review list
 
 
 ## Development and Setup.
