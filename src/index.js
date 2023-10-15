@@ -105,9 +105,9 @@ const myChart = new Chart(ctx, {
         data: ylabels,
         borderWidth: 1.5,
         smooth: true,
-        backgroundColor: 'blue',
+        backgroundColor: 'orange',
         fill: false,
-        borderColor: 'rgb(75, 192, 192)',
+        borderColor: 'orange',
         tension: 0.1
       }]
     },
