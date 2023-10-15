@@ -147,7 +147,7 @@ const weatherData = async () => {
       const forecast = new Promise(async (resolve, reject) => {
         try {
           const forecastApiData = await fetch(
-            `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=8109965e7254a469d08a746e8b210e1e&units=imperial&cnt=10`,
+            `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=8109965e7254a469d08a746e8b210e1e&units=metric&cnt=10`,
           )
   
           resolve(await forecastApiData.json())
