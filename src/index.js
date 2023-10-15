@@ -7,10 +7,15 @@ const pressure = document.getElementById('pressure');
 const lowest = document.getElementById('lowestTemp')
 const highest = document.getElementById('highestTemp');
 const getLocation = document.getElementById('location');
+const getLocation1 = document.getElementById('location1');
 const getTime = document.getElementById('time');
+const getTime1 = document.getElementById('time1');
 const weatherIcon = document.getElementById('weatherIcon');
+const weatherIcon1 = document.getElementById('weatherIcon1');
 const currentTemperature = document.getElementById('currentTemp');
+const currentTemperature1 = document.getElementById('currentTemp1');
 const weatherDescription = document.getElementById('weatherDescription');
+const weatherDescription1 = document.getElementById('weatherDescription1');
 
 
 const apiKey = "8109965e7254a469d08a746e8b210e1e";
@@ -42,24 +47,33 @@ function renderDom(data) {
         lowest.innerText = data[0].main.temp_min
         highest.innerText = data[0].main.temp_max;
         // Get and format Current Time
-        time.innerText = new Date(Date.now()).toLocaleString('en-US', {
+        getTime.innerText = new Date(Date.now()).toLocaleString('en-US', {
             hour: 'numeric',
             minute: 'numeric',
       })
+
+      getTime1.innerText = new Date(Date.now()).toLocaleString('en-US', {
+        hour: 'numeric',
+        minute: 'numeric',
+  })
         // Get the location of the user from the API (When you type, it's probably not formatted)
         getLocation.innerText = data[0].name;
+        getLocation1.innerText = data[0].name;
     
         // Weather Icon
     // Use template literals to insert the in the below link, then set it as image source:
     // http://openweathermap.org/img/w/10d.png
     // All you need to do is that moderate the icon id given in the link. You can change 10d with any icon id that you need.
        weatherIcon.src = `http://openweathermap.org/img/wn/${data[0].weather[0].icon}@2x.png`
+       weatherIcon1.src = `http://openweathermap.org/img/wn/${data[0].weather[0].icon}@2x.png`
     
        //current temperature
        currentTemperature.innerText = data[0].main.temp;
+       currentTemperature1.innerText = data[0].main.temp;
     
        // Description of the current weather
        weatherDescription.innerText = data[0].weather[0].main;
+       weatherDescription1.innerText = data[0].weather[0].main;
      // Display chart
      // create a function
      renderChart(data[1].list)
